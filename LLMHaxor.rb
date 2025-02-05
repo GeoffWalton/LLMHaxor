@@ -529,8 +529,6 @@ class BurpExtender
   def registerExtenderCallbacks(callbacks)
 
     ###DEBUG
-    #java.lang.System.setProperty('jruby.home', '/Users/geoffwalton/jruby')
-    #java.lang.System.setProperty('jruby.lib', '/Users/geoffwalton/jruby/lib')
     #require 'pry'
     #require 'pry-nav'
     ###END
