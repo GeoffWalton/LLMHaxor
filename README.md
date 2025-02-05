@@ -1,4 +1,5 @@
 What:
+
 This is what I consider the minimum viable product for bolting an LLM models (running on Ollama) to Burps' Intruder. 
 
 Projects like PyRIT and PyRITShip are probably the way to go if you are doing anything high tech! 
@@ -6,6 +7,7 @@ Projects like PyRIT and PyRITShip are probably the way to go if you are doing an
 The idea here is to be able to quickly try targeting something with an LLM model whithout having to write any code and without having to use anything but local resources. Given compute requirements of LLMs it maybe valuable for getting an attack or experiment started while you work on scafolding a more serious attempt in PyRIT or othe tools.
 
 How:
+
 Load the LLMHaxor.rb into your Burp Extentder. (See Requirements)
 Configure the output settings in Extender, requests to Ollama are printed for history
 Goto the LLMHaxor tab and configure the host and port values for your Ollama 
@@ -24,6 +26,7 @@ Goto your intruder attack select your payload positions, and type (recursive gre
  :-) cross fingers 
 
 Requirements:
+
 Ollam running somewhere reachable by Burp and some models configured.
 Tested with jruby 9.3.8.0 (Should work with newer and possibly older Ruby jars) 
 required additional gems: json, base64 
